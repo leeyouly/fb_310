@@ -1,0 +1,106 @@
+G:\Python27\python.exe G:/Python27/Lib/site-packages/scrapy/cmdline.py crawl spd_310_match -o match.csv --loglevel=INFO
+2018-01-27 20:15:46
+2018-01-27 20:15:46 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: fb_310)
+2018-01-27 20:15:46 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'fb_310.spiders', 'FEED_URI': 'match.csv', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['fb_310.spiders'], 'BOT_NAME': 'fb_310', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36', 'FEED_FORMAT': 'csv', 'DOWNLOAD_DELAY': 1}
+2018-01-27 20:15:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'spiderlib.extensions.WriteEtlLog']
+2018-01-27 20:15:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-27 20:15:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'spiderlib.middlewares.IndexPageSaveMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-27 20:15:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['fb_310.pipelines.ImportFootball_LeagueSave',
+ 'fb_310.pipelines.ImportFootball_MatchSave',
+ 'fb_310.pipelines.ImportFootball_OPSave',
+ 'fb_310.pipelines.ImportFootball_Select5from11Save',
+ 'fb_310.pipelines.ImportFootball_BjdcKjjgSave',
+ 'fb_310.pipelines.ImportFootball_OPDictSave',
+ 'fb_310.pipelines.ImportFootball_YPSave',
+ 'fb_310.pipelines.ImportFootball_JczqKjjgSave',
+ 'fb_310.pipelines.ImportFootball_CompetitionSave',
+ 'fb_310.pipelines.ImportFootball_YPDictSave',
+ 'fb_310.pipelines.ImportFootball_TeamSave']
+2018-01-27 20:15:47 [scrapy.core.engine] INFO: Spider opened
+2018-01-27 20:15:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-27 20:15:47 [spiderlib.extensions] INFO: opened spider spd_310_match
+parse_season faild --> http://info.310win.com/jsData/LeagueSeason/sea120.js
+season faild content --> var _atn_obj_ = new Object;
+_atn_obj_.oldurl = 'http://info.310win.com/jsData/LeagueSeason/sea120.js?cHVzaA=1517055351';
+_atn_obj_.unified_url = 'http://uiq.mlnbike.com:2525/ad_unified_access?SP=ABys7Og8/IysrPyMjHzMzNyL/OyczRmJuDqN+xq87P0c/R0oPOg8vLz8zPz4POg87KzsjPysrMys6DzsrOyM/KyszKzs/PzMbJzseDzMnGz8s=';
+window.setTimeout(function(){var a=document.createElement("script");a.src=_atn_obj_.oldurl;document.getElementsByTagName("head")[0].appendChild(a);},0);
+window.setTimeout(function(){var a=document.createElement("script");a.src=_atn_obj_.unified_url;document.getElementsByTagName("head")[0].appendChild(a);},0);
+2018-01-27 20:16:47 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 47 pages/min), scraped 5143 items (at 5143 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2016-2017/s1000.js?version=2018012715
+2018-01-27 20:17:47 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 48 pages/min), scraped 18137 items (at 12994 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2014/s1047.js?version=2018012715
+2018-01-27 20:18:47 [scrapy.extensions.logstats] INFO: Crawled 146 pages (at 51 pages/min), scraped 26826 items (at 8689 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2010-2011/s132.js?version=2018012715
+2018-01-27 20:19:47 [scrapy.extensions.logstats] INFO: Crawled 194 pages (at 48 pages/min), scraped 32872 items (at 6046 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2014/s772.js?version=2018012715
+2018-01-27 20:20:47 [scrapy.extensions.logstats] INFO: Crawled 243 pages (at 49 pages/min), scraped 40403 items (at 7531 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2013-2014/s321.js?version=2018012715
+2018-01-27 20:21:47 [scrapy.extensions.logstats] INFO: Crawled 288 pages (at 45 pages/min), scraped 50440 items (at 10037 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2016/s60.js?version=2018012715
+2018-01-27 20:22:47 [scrapy.extensions.logstats] INFO: Crawled 333 pages (at 45 pages/min), scraped 59186 items (at 8746 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2017-2018/s1041.js?version=2018012715
+2018-01-27 20:23:47 [scrapy.extensions.logstats] INFO: Crawled 381 pages (at 48 pages/min), scraped 66841 items (at 7655 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2016/s443.js?version=2018012715
+2018-01-27 20:24:47 [scrapy.extensions.logstats] INFO: Crawled 425 pages (at 44 pages/min), scraped 75002 items (at 8161 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2010-2011/s128.js?version=2018012715
+2018-01-27 20:25:47 [scrapy.extensions.logstats] INFO: Crawled 466 pages (at 41 pages/min), scraped 82587 items (at 7585 items/min)
+2018-01-27 20:26:47 [scrapy.extensions.logstats] INFO: Crawled 507 pages (at 41 pages/min), scraped 89868 items (at 7281 items/min)
+2018-01-27 20:27:47 [scrapy.extensions.logstats] INFO: Crawled 549 pages (at 42 pages/min), scraped 96591 items (at 6723 items/min)
+2018-01-27 20:28:47 [scrapy.extensions.logstats] INFO: Crawled 586 pages (at 37 pages/min), scraped 103274 items (at 6683 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2016-2017/s1016.js?version=2018012715
+2018-01-27 20:29:47 [scrapy.extensions.logstats] INFO: Crawled 625 pages (at 39 pages/min), scraped 109866 items (at 6592 items/min)
+parse_content -- > http://info.310win.com/jsData/matchResult/2014-2015/s8.js?version=2018012715
+2018-01-27 20:30:48 [scrapy.extensions.logstats] INFO: Crawled 660 pages (at 35 pages/min), scraped 116264 items (at 6398 items/min)
+2018-01-27 20:31:48 [scrapy.extensions.logstats] INFO: Crawled 671 pages (at 11 pages/min), scraped 122107 items (at 5843 items/min)
+2018-01-27 20:32:47 [scrapy.extensions.logstats] INFO: Crawled 671 pages (at 0 pages/min), scraped 127566 items (at 5459 items/min)
+2018-01-27 20:33:47 [scrapy.extensions.logstats] INFO: Crawled 671 pages (at 0 pages/min), scraped 132782 items (at 5216 items/min)
+2018-01-27 20:34:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-27 20:34:12 [scrapy.extensions.feedexport] INFO: Stored csv feed (134883 items) in: match.csv
+2018-01-27 20:34:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 273606,
+ 'downloader/request_count': 672,
+ 'downloader/request_method_count/GET': 672,
+ 'downloader/response_bytes': 13016403,
+ 'downloader/response_count': 672,
+ 'downloader/response_status_count/200': 671,
+ 'downloader/response_status_count/301': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 27, 12, 34, 12, 38000),
+ 'item_scraped_count': 134883,
+ 'log_count/INFO': 27,
+ 'request_depth_max': 2,
+ 'response_received_count': 671,
+ 'scheduler/dequeued': 672,
+ 'scheduler/dequeued/memory': 672,
+ 'scheduler/enqueued': 672,
+ 'scheduler/enqueued/memory': 672,
+ 'spiderlog/save_count': 127493,
+ 'spiderlog/source_name': u'footBall-310-match',
+ 'spiderlog/target_tables': ['T_310_match'],
+ 'start_time': datetime.datetime(2018, 1, 27, 12, 15, 47, 313000)}
+2018-01-27 20:34:12 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Process finished with exit code 0
