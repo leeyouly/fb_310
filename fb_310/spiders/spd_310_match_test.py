@@ -16,7 +16,7 @@ print time.strftime('%Y-%m-%d %H:%M:%S', timestruct)
 
 #赛事爬虫 
 class spd_310_competition_class(Spider):
-    name = "spd_310_match1"
+    name = "spd_310_match11111111111111111111"
     # allowed_domains = ["http://simu.7hcn.com/"]
     start_urls = (
         'http://info.310win.com',
