@@ -20,7 +20,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-DOWNLOAD_DELAY=0.5
+DOWNLOAD_DELAY=0.55
 SPIDER_MIDDLEWARES = {
    'spiderlib.middlewares.IndexPageSaveMiddleware': 300,
 }
